@@ -58,6 +58,10 @@ public class MouseLook : MonoBehaviour {
 	{
 		// Make the rigid body not change rotation
 		if (GetComponent<Rigidbody>())
+		{
 			GetComponent<Rigidbody>().freezeRotation = true;
+		}
+		//Set Cursor to not be visible
+        Cursor.visible = false;
 	}
 }
